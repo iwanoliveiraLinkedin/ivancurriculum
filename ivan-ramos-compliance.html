@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ivan Ramos de Oliveira — Compliance, Riscos e Auditoria Interna</title>
+<meta name="description" content="Ivan Ramos de Oliveira — Analista de Compliance, Gestão de Riscos e Auditoria Interna com mais de 13 anos no setor financeiro (microcrédito). Salvador, BA.">
+<meta name="keywords" content="Compliance, Governança Corporativa, Gestão de Riscos, Auditoria Interna, Controles Internos, PLD/FT, KYC, Due Diligence, LGPD, SOX, ISO 19011, ISO 9001, Prevenção à Fraude, Análise de Causa Raiz, Conformidade Regulatória, Salvador, Bahia, Microcrédito, Banco do Nordeste, Crediamigo">
+<meta property="og:title" content="Ivan Ramos de Oliveira — Compliance, Riscos e Auditoria Interna">
+<meta property="og:description" content="13+ anos garantindo aderência a normas internas e externas em instituições do setor financeiro.">
+<meta property="og:type" content="profile">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F1F3EF;
+  --paper-2:#E5E9E2;
+  --rule:#C3CCC2;
+  --seal:#1F5C4A;
+  --amber:#B8862B;
+  --alert:#8F3A33;
+  --text:#10221D;
+  --text-soft:#4A5C55;
+  --bg:#F1F3EF;
+  --panel:#FBFCFA;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#0D1714; --paper-2:#152220; --rule:#2C423B; --seal:#6FB79C;
+    --amber:#D6A94A; --alert:#D07A70; --text:#E6EDE8; --text-soft:#9DB2A9;
+    --bg:#0D1714; --panel:#121E1B;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0D1714; --paper-2:#152220; --rule:#2C423B; --seal:#6FB79C;
+  --amber:#D6A94A; --alert:#D07A70; --text:#E6EDE8; --text-soft:#9DB2A9;
+  --bg:#0D1714; --panel:#121E1B;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0; background:var(--bg); color:var(--text);
+  font-family:"Source Serif 4", Georgia, "Times New Roman", serif;
+  font-size:17px; line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+@media (prefers-reduced-motion: reduce){
+  *{animation:none !important; transition:none !important}
+  html{scroll-behavior:auto}
+}
+h1,h2,h3,.mark,.chip,button,nav,.stat-num,.dossier,.yrs{font-family:"Archivo", Helvetica, Arial, sans-serif}
+a{color:inherit}
+.wrap{max-width:1060px;margin:0 auto;padding:0 22px}
+
+.topbar{
+  position:sticky;top:0;z-index:40;background:var(--bg);
+  border-bottom:1px solid var(--rule);
+}
+.topbar .wrap{display:flex;align-items:center;gap:18px;height:56px}
+.mark{font-weight:700;letter-spacing:-.02em;font-size:15px;white-space:nowrap}
+.mark span{color:var(--seal)}
+.navlinks{display:flex;gap:16px;margin-left:auto;font-size:13.5px;font-weight:500}
+.navlinks a{text-decoration:none;color:var(--text-soft);padding:4px 0;border-bottom:2px solid transparent}
+.navlinks a:hover,.navlinks a.on{color:var(--text);border-color:var(--seal)}
+.themebtn{
+  border:1px solid var(--rule);background:transparent;color:var(--text-soft);
+  border-radius:2px;padding:5px 9px;font-size:12px;cursor:pointer;font-weight:600;
+}
+.themebtn:hover{color:var(--text);border-color:var(--seal)}
+@media(max-width:820px){.navlinks{display:none} .themebtn{margin-left:auto}}
+
+.hero{padding:54px 0 34px;border-bottom:1px solid var(--rule)}
+.hero-grid{display:grid;grid-template-columns:1.25fr .78fr;gap:44px;align-items:start}
+.dossier{font-size:12.5px;letter-spacing:.05em;color:var(--text-soft);font-weight:600}
+h1{
+  font-size:clamp(34px,6vw,60px);line-height:1.02;margin:12px 0 0;
+  font-weight:700;letter-spacing:-.035em;
+}
+h1 .sur{display:block;color:var(--text-soft);font-weight:500}
+.role{margin:18px 0 0;font-size:clamp(17px,2.1vw,21px);line-height:1.45;max-width:32ch}
+.role b{color:var(--seal);font-weight:600}
+.lede{margin:16px 0 0;color:var(--text-soft);max-width:56ch;font-size:16px}
+.cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.btn{
+  font-family:"Archivo",Helvetica,Arial,sans-serif;font-weight:600;font-size:14px;text-decoration:none;
+  padding:11px 16px;border:1px solid var(--seal);border-radius:2px;cursor:pointer;
+  background:var(--seal);color:var(--bg);display:inline-block;
+}
+.btn.ghost{background:transparent;color:var(--text);border-color:var(--rule)}
+.btn.ghost:hover{border-color:var(--seal);color:var(--seal)}
+.btn:focus-visible,.themebtn:focus-visible,input:focus-visible,a:focus-visible{outline:2px solid var(--amber);outline-offset:2px}
+
+.attest{border:1px solid var(--rule);background:var(--panel);border-radius:3px}
+.attest h3{
+  margin:0;font-size:12px;letter-spacing:.05em;font-weight:600;color:var(--text-soft);
+  padding:12px 16px;border-bottom:1px solid var(--rule);display:flex;justify-content:space-between;gap:8px;
+}
+.attest ul{list-style:none;margin:0;padding:8px 0}
+.attest li{
+  display:flex;gap:11px;align-items:baseline;padding:7px 16px;font-size:15px;
+  opacity:0;transform:translateY(4px);animation:show .45s ease forwards;
+}
+@keyframes show{to{opacity:1;transform:none}}
+.attest li i{font-style:normal;color:var(--seal);font-family:"Archivo",sans-serif;font-weight:700;font-size:13px;flex:none;width:14px}
+.attest .foot{
+  border-top:1px solid var(--rule);padding:10px 16px;font-size:12.5px;color:var(--text-soft);
+  display:flex;justify-content:space-between;gap:10px;font-family:"Archivo",sans-serif;flex-wrap:wrap;
+}
+@media(max-width:860px){.hero-grid{grid-template-columns:1fr;gap:30px}}
+
+section{padding:52px 0;border-bottom:1px solid var(--rule)}
+.sec-head{display:flex;align-items:baseline;gap:14px;margin-bottom:26px;flex-wrap:wrap}
+h2{font-size:clamp(20px,2.6vw,26px);margin:0;font-weight:700;letter-spacing:-.02em}
+.sec-head p{margin:0;color:var(--text-soft);font-size:15px}
+
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--rule);border:1px solid var(--rule)}
+.statbox{background:var(--panel);padding:20px 18px}
+.stat-num{font-size:clamp(28px,4.4vw,40px);font-weight:700;letter-spacing:-.03em;line-height:1;color:var(--seal)}
+.stat-lab{font-size:13.5px;color:var(--text-soft);margin-top:8px;line-height:1.35}
+@media(max-width:700px){.stats{grid-template-columns:repeat(2,1fr)}}
+
+.domains{display:grid;grid-template-columns:1fr 1fr;gap:10px 34px;margin-top:26px}
+.dom{display:grid;grid-template-columns:1fr auto;gap:4px 12px;align-items:center;padding:9px 0;border-bottom:1px dotted var(--rule)}
+.dom b{font-family:"Archivo",sans-serif;font-weight:600;font-size:14.5px}
+.yrs{font-size:12.5px;color:var(--text-soft)}
+.track{grid-column:1/-1;height:7px;background:var(--paper-2);overflow:hidden}
+.fill{height:100%;background:var(--seal);width:0;transition:width 1.1s cubic-bezier(.2,.8,.2,1)}
+.fill.amber{background:var(--amber)}
+@media(max-width:700px){.domains{grid-template-columns:1fr}}
+
+.matrix-scroll{overflow-x:auto;margin-top:8px;border:1px solid var(--rule)}
+table{border-collapse:collapse;width:100%;min-width:660px;background:var(--panel);font-size:14px}
+th,td{border-bottom:1px solid var(--rule);border-right:1px solid var(--rule);padding:11px 12px;text-align:left}
+thead th{font-family:"Archivo",sans-serif;font-weight:600;font-size:12.5px;color:var(--text-soft);white-space:nowrap}
+tbody th{position:sticky;left:0;background:var(--panel);font-family:"Archivo",sans-serif;font-weight:600;font-size:13.5px}
+td.c{text-align:center;color:var(--seal);font-weight:700;font-family:"Archivo",sans-serif}
+td.c.l{color:var(--amber)}
+td.c.n{color:var(--rule)}
+.legend{font-size:13px;color:var(--text-soft);margin-top:10px}
+
+.search{display:flex;gap:10px;align-items:center;border:1px solid var(--rule);background:var(--panel);padding:9px 12px;max-width:430px}
+.search input{border:0;background:transparent;color:var(--text);font-family:"Archivo",sans-serif;font-size:14.5px;width:100%}
+.search input::placeholder{color:var(--text-soft)}
+.count{font-size:12.5px;color:var(--text-soft);white-space:nowrap;font-family:"Archivo",sans-serif}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.chip{font-size:13.5px;font-weight:500;padding:6px 11px;border:1px solid var(--rule);background:transparent;color:var(--text)}
+.chip[data-g="reg"]{border-left:3px solid var(--seal)}
+.chip[data-g="risk"]{border-left:3px solid var(--amber)}
+.chip[data-g="aud"]{border-left:3px solid var(--alert)}
+.chip.dim{opacity:.22}
+.chip.hit{background:var(--paper-2);border-color:var(--seal)}
+.keylegend{display:flex;gap:16px;flex-wrap:wrap;margin-top:16px;font-size:13px;color:var(--text-soft)}
+.keylegend span::before{content:"";display:inline-block;width:10px;height:10px;margin-right:6px}
+.k1::before{background:var(--seal)}.k2::before{background:var(--amber)}.k3::before{background:var(--alert)}
+
+.job{display:grid;grid-template-columns:150px 1fr;gap:26px;padding:24px 0;border-bottom:1px dotted var(--rule)}
+.job:last-child{border-bottom:0}
+.when{font-family:"Archivo",sans-serif;font-size:13.5px;color:var(--text-soft);font-weight:600}
+.when em{display:block;font-style:normal;color:var(--seal);font-weight:700;font-size:12.5px;margin-top:4px}
+.job h3{margin:0 0 4px;font-size:18.5px;font-weight:700;letter-spacing:-.01em}
+.org{color:var(--text-soft);font-size:14.5px;margin:0 0 12px;font-family:"Archivo",sans-serif;font-weight:500}
+.job ul{margin:0;padding-left:18px}
+.job li{margin-bottom:7px}
+@media(max-width:700px){.job{grid-template-columns:1fr;gap:10px}}
+
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:34px}
+.cols h3{font-size:15px;margin:0 0 12px;font-weight:600;letter-spacing:-.01em}
+.cols ul{list-style:none;margin:0;padding:0}
+.cols li{padding:8px 0;border-bottom:1px dotted var(--rule);font-size:15px;display:flex;gap:10px}
+.cols li small{margin-left:auto;color:var(--text-soft);font-family:"Archivo",sans-serif;font-size:12px;white-space:nowrap}
+.prog{color:var(--amber)}
+@media(max-width:700px){.cols{grid-template-columns:1fr;gap:26px}}
+
+.contact{display:grid;grid-template-columns:1fr auto;gap:30px;align-items:center}
+.contact p{margin:0;max-width:46ch;color:var(--text-soft)}
+.contact h2{margin-bottom:10px}
+.copyrow{display:flex;flex-wrap:wrap;gap:10px}
+@media(max-width:780px){.contact{grid-template-columns:1fr}}
+footer{padding:26px 0 44px;font-size:13px;color:var(--text-soft);font-family:"Archivo",sans-serif;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.toast{
+  position:fixed;left:50%;bottom:26px;transform:translateX(-50%) translateY(20px);
+  background:var(--seal);color:var(--bg);padding:10px 18px;font-family:"Archivo",sans-serif;
+  font-size:13.5px;opacity:0;pointer-events:none;transition:.25s;z-index:60;
+}
+.toast.on{opacity:1;transform:translateX(-50%)}
+img{max-width:100%}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <div class="mark">IVAN RAMOS DE OLIVEIRA <span>/ Conformidade</span></div>
+    <nav class="navlinks">
+      <a href="#painel">Painel</a>
+      <a href="#matriz">Matriz</a>
+      <a href="#termos">Termos-chave</a>
+      <a href="#trajetoria">Trajetória</a>
+      <a href="#formacao">Formação</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <button class="themebtn" id="theme">Tema</button>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="dossier">Dossiê profissional · Salvador, BA · aberto a novas oportunidades</div>
+      <h1>Ivan Ramos<span class="sur">de Oliveira</span></h1>
+      <p class="role">Analista de <b>Compliance</b>, <b>Gestão de Riscos</b> e <b>Auditoria Interna</b> no setor financeiro.</p>
+      <p class="lede">Treze anos dentro da operação de microcrédito do Crediamigo / Banco do Nordeste: escrevendo políticas, monitorando controles, investigando causa raiz e transformando achado em ação corretiva concluída. Quando o auditor externo, o regulador ou a diretoria perguntam, a resposta já está documentada.</p>
+      <div class="cta">
+        <a class="btn" href="https://www.linkedin.com/in/ivan-ramos-de-oliveira-08a321135" target="_blank" rel="noopener">Ver perfil no LinkedIn</a>
+        <a class="btn ghost" href="mailto:iwanoliveira@yahoo.com.br?subject=Oportunidade%20em%20Compliance">Enviar e-mail</a>
+        <a class="btn ghost" href="https://wa.me/5574999792524" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+
+    <aside class="attest">
+      <h3><span>Resumo do dossiê</span><span>2013—2026</span></h3>
+      <ul id="attest">
+        <li><i>✓</i><span>13+ anos em conformidade interna e externa</span></li>
+        <li><i>✓</i><span>MBA em Controladoria, Auditoria e Compliance</span></li>
+        <li><i>✓</i><span>Auditor da Qualidade ISO 9001:2015 / ISO 19011</span></li>
+        <li><i>✓</i><span>PLD/FT, KYC e Due Diligence na prática</span></li>
+        <li><i>✓</i><span>LGPD, Prevenção à Fraude e Ética Empresarial</span></li>
+        <li><i>✓</i><span>SOX, Power BI e Excel avançado em curso</span></li>
+      </ul>
+      <div class="foot"><span>Setor financeiro / microcrédito</span><span>Português nativo</span></div>
+    </aside>
+  </div>
+</header>
+
+<main>
+
+<section id="painel">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Painel de atuação</h2>
+      <p>Onde os treze anos foram efetivamente investidos.</p>
+    </div>
+
+    <div class="stats">
+      <div class="statbox"><div class="stat-num" data-to="13" data-suf="+">0</div><div class="stat-lab">anos em Compliance, Riscos e Auditoria Interna</div></div>
+      <div class="statbox"><div class="stat-num" data-to="2">0</div><div class="stat-lab">instituições do setor financeiro, na mesma cadeia operacional</div></div>
+      <div class="statbox"><div class="stat-num" data-to="11" data-suf="+">0</div><div class="stat-lab">cursos e certificações concluídos</div></div>
+      <div class="statbox"><div class="stat-num" data-to="3">0</div><div class="stat-lab">em andamento: SOX, Power BI e Excel avançado</div></div>
+    </div>
+
+    <div class="domains">
+      <div class="dom"><b>Controles internos e conformidade de processos</b><span class="yrs">13 anos</span><div class="track"><div class="fill" data-w="100"></div></div></div>
+      <div class="dom"><b>Gestão e avaliação de riscos operacionais</b><span class="yrs">11 anos</span><div class="track"><div class="fill" data-w="88"></div></div></div>
+      <div class="dom"><b>Políticas, procedimentos e governança</b><span class="yrs">10 anos</span><div class="track"><div class="fill" data-w="80"></div></div></div>
+      <div class="dom"><b>Auditoria interna e testes de aderência</b><span class="yrs">9 anos</span><div class="track"><div class="fill" data-w="72"></div></div></div>
+      <div class="dom"><b>Prevenção à fraude, PLD/FT e KYC</b><span class="yrs">8 anos</span><div class="track"><div class="fill" data-w="64"></div></div></div>
+      <div class="dom"><b>Análise de dados aplicada a controles</b><span class="yrs">em formação</span><div class="track"><div class="fill amber" data-w="38"></div></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="matriz">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Matriz de competências</h2>
+      <p>Linha: o tema. Coluna: o que eu efetivamente faço nele.</p>
+    </div>
+    <div class="matrix-scroll">
+      <table>
+        <thead>
+          <tr><th scope="col">Tema</th><th scope="col">Desenhar</th><th scope="col">Monitorar</th><th scope="col">Testar</th><th scope="col">Investigar</th><th scope="col">Reportar</th></tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">Políticas e procedimentos</th><td class="c">●</td><td class="c">●</td><td class="c l">◐</td><td class="c n">○</td><td class="c">●</td></tr>
+          <tr><th scope="row">Controles internos</th><td class="c">●</td><td class="c">●</td><td class="c">●</td><td class="c l">◐</td><td class="c">●</td></tr>
+          <tr><th scope="row">Riscos operacionais</th><td class="c l">◐</td><td class="c">●</td><td class="c">●</td><td class="c">●</td><td class="c">●</td></tr>
+          <tr><th scope="row">Fraude, PLD/FT e KYC</th><td class="c l">◐</td><td class="c">●</td><td class="c l">◐</td><td class="c">●</td><td class="c">●</td></tr>
+          <tr><th scope="row">Auditoria interna</th><td class="c l">◐</td><td class="c">●</td><td class="c">●</td><td class="c">●</td><td class="c">●</td></tr>
+          <tr><th scope="row">Governança e ética</th><td class="c">●</td><td class="c">●</td><td class="c n">○</td><td class="c l">◐</td><td class="c">●</td></tr>
+          <tr><th scope="row">Processos e benchmarking</th><td class="c">●</td><td class="c">●</td><td class="c l">◐</td><td class="c">●</td><td class="c">●</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="legend">● atuação direta e recorrente · ◐ atuação de apoio · ○ fora do escopo até aqui</p>
+  </div>
+</section>
+
+<section id="termos">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Termos-chave</h2>
+      <p>Busque um requisito da vaga e veja se ele aparece aqui.</p>
+    </div>
+    <label class="search">
+      <span aria-hidden="true" style="color:var(--text-soft)">⌕</span>
+      <input id="q" type="search" placeholder="ex.: PLD, ISO, causa raiz, SOX…" aria-label="Buscar termo">
+      <span class="count" id="count"></span>
+    </label>
+    <div class="chips" id="chips">
+      <span class="chip" data-g="reg">Compliance Corporativo</span>
+      <span class="chip" data-g="reg">Governança Corporativa</span>
+      <span class="chip" data-g="reg">Conformidade Regulatória</span>
+      <span class="chip" data-g="reg">Gestão de Políticas e Procedimentos</span>
+      <span class="chip" data-g="reg">Conduta Ética</span>
+      <span class="chip" data-g="reg">Ética Empresarial</span>
+      <span class="chip" data-g="reg">LGPD</span>
+      <span class="chip" data-g="reg">Programa de Integridade</span>
+      <span class="chip" data-g="reg">Código de Conduta</span>
+      <span class="chip" data-g="reg">Canal de Denúncias</span>
+      <span class="chip" data-g="reg">Microcrédito</span>
+      <span class="chip" data-g="reg">Comunicação Não Violenta</span>
+      <span class="chip" data-g="risk">Gestão de Riscos</span>
+      <span class="chip" data-g="risk">Avaliação de Riscos</span>
+      <span class="chip" data-g="risk">Riscos Operacionais</span>
+      <span class="chip" data-g="risk">Matriz de Riscos</span>
+      <span class="chip" data-g="risk">Prevenção à Fraude</span>
+      <span class="chip" data-g="risk">PLD/FT</span>
+      <span class="chip" data-g="risk">Prevenção à Lavagem de Dinheiro</span>
+      <span class="chip" data-g="risk">Financiamento ao Terrorismo</span>
+      <span class="chip" data-g="risk">Due Diligence</span>
+      <span class="chip" data-g="risk">KYC — Know Your Customer</span>
+      <span class="chip" data-g="risk">Análise de Casos e Tomada de Decisão</span>
+      <span class="chip" data-g="aud">Auditoria Interna</span>
+      <span class="chip" data-g="aud">Controles Internos</span>
+      <span class="chip" data-g="aud">Monitoramento de Controles</span>
+      <span class="chip" data-g="aud">Testes de Aderência</span>
+      <span class="chip" data-g="aud">Análise de Causa Raiz</span>
+      <span class="chip" data-g="aud">Ações Corretivas e Preventivas</span>
+      <span class="chip" data-g="aud">Planos de Ação</span>
+      <span class="chip" data-g="aud">ISO 9001:2015</span>
+      <span class="chip" data-g="aud">ISO 19011</span>
+      <span class="chip" data-g="aud">SOX — Sarbanes-Oxley</span>
+      <span class="chip" data-g="aud">Benchmarking</span>
+      <span class="chip" data-g="aud">Melhoria Contínua de Processos</span>
+      <span class="chip" data-g="aud">Gestão de Processos</span>
+      <span class="chip" data-g="aud">Relatórios e SLA</span>
+      <span class="chip" data-g="aud">Gestão Documental</span>
+      <span class="chip" data-g="aud">Power BI</span>
+      <span class="chip" data-g="aud">Excel Avançado</span>
+    </div>
+    <div class="keylegend">
+      <span class="k1">Compliance e governança</span>
+      <span class="k2">Riscos, fraude e PLD/FT</span>
+      <span class="k3">Auditoria, processos e ferramentas</span>
+    </div>
+  </div>
+</section>
+
+<section id="trajetoria">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Trajetória</h2>
+      <p>Treze anos na mesma cadeia de valor — conheço o processo de ponta a ponta.</p>
+    </div>
+
+    <div class="job">
+      <div class="when">Ago 2022 — Ago 2026<em>4 anos</em></div>
+      <div>
+        <h3>Analista de Conformidade Interno e Externo</h3>
+        <p class="org">CamedMicrocrédito · operação Crediamigo / Banco do Nordeste</p>
+        <ul>
+          <li>Acompanhamento de metodologias administrativas e controles internos, padronizando processos e verificando aderência a normas internas e externas.</li>
+          <li>Análise de causa raiz das não conformidades, definição de ações corretivas e preventivas e monitoramento até o encerramento.</li>
+          <li>Avaliação de casos de risco e suspeita de fraude, subsidiando decisão e reporte às áreas responsáveis.</li>
+          <li>Desenvolvimento e revisão de políticas e procedimentos, com benchmarking de práticas de mercado.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="job">
+      <div class="when">Jul 2013 — Ago 2022<em>9 anos</em></div>
+      <div>
+        <h3>Analista de Conformidade Interno e Externo</h3>
+        <p class="org">Instituto Nordeste Cidadania · operação Crediamigo / Banco do Nordeste</p>
+        <ul>
+          <li>Conformidade dos processos operacionais da carteira de microcrédito, com monitoramento contínuo de controles.</li>
+          <li>Apoio a iniciativas de Compliance, Governança Corporativa e Auditoria Interna, esclarecendo dúvidas normativas às equipes.</li>
+          <li>Elaboração de relatórios e acompanhamento de SLA, com organização e guarda da documentação de suporte.</li>
+          <li>Acompanhamento de tendências do setor e proposição de melhorias para fortalecer a cultura de integridade.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="formacao">
+  <div class="wrap">
+    <div class="sec-head"><h2>Formação e certificações</h2></div>
+    <div class="cols">
+      <div>
+        <h3>Formação acadêmica</h3>
+        <ul>
+          <li>MBA em Controladoria, Auditoria e Compliance — UNIFACS <small>2022–2024</small></li>
+          <li>Tecnólogo em Processos Gerenciais — Estácio <small>2019–2021</small></li>
+        </ul>
+        <h3 style="margin-top:26px">Em andamento</h3>
+        <ul>
+          <li class="prog">SOX — Sarbanes-Oxley <small>cursando</small></li>
+          <li class="prog">Análise de Dados com Power BI <small>cursando</small></li>
+          <li class="prog">Excel Avançado <small>cursando</small></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Cursos e certificações</h3>
+        <ul>
+          <li>Auditor da Qualidade ISO 9001:2015 / ISO 19011</li>
+          <li>Auditoria Interna e Controladoria</li>
+          <li>Capacitação em Compliance</li>
+          <li>Governança Corporativa</li>
+          <li>Ética Empresarial</li>
+          <li>Prevenção à Fraude</li>
+          <li>Prevenção à Lavagem de Dinheiro e ao Financiamento do Terrorismo</li>
+          <li>LGPD</li>
+          <li>Gestão de Processos</li>
+          <li>Gestão de Risco</li>
+          <li>Comunicação Não Violenta</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contato">
+  <div class="wrap contact">
+    <div>
+      <h2>Vamos conversar</h2>
+      <p>Aberto a posições de Analista de Compliance, Riscos ou Auditoria Interna — em Salvador, híbrido ou remoto. Respondo no mesmo dia útil.</p>
+    </div>
+    <div class="copyrow">
+      <button class="btn ghost" data-copy="iwanoliveira@yahoo.com.br">Copiar e-mail</button>
+      <button class="btn ghost" data-copy="+55 74 99979-2524">Copiar telefone</button>
+      <a class="btn" href="https://www.linkedin.com/in/ivan-ramos-de-oliveira-08a321135" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<div class="wrap"><footer>
+  <span>Ivan Ramos de Oliveira · Salvador, Bahia</span>
+  <span>Compliance · Riscos · Auditoria Interna</span>
+</footer></div>
+
+<div class="toast" id="toast">Copiado</div>
+
+<script>
+(function(){
+  var root = document.documentElement;
+  try{ var saved = localStorage.getItem('ivan-theme'); if(saved) root.setAttribute('data-theme', saved); }catch(e){}
+  document.getElementById('theme').addEventListener('click', function(){
+    var cur = root.getAttribute('data-theme');
+    var dark = cur ? cur === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+    var next = dark ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    try{ localStorage.setItem('ivan-theme', next); }catch(e){}
+  });
+
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  var items = document.querySelectorAll('#attest li');
+  Array.prototype.forEach.call(items, function(li,i){
+    li.style.animationDelay = (120 + i*90) + 'ms';
+  });
+
+  function runStats(){
+    Array.prototype.forEach.call(document.querySelectorAll('.stat-num'), function(el){
+      var to = +el.getAttribute('data-to'), suf = el.getAttribute('data-suf') || '';
+      if(reduce){ el.textContent = to + suf; return; }
+      var t0 = null;
+      function step(ts){
+        if(!t0) t0 = ts;
+        var p = Math.min((ts-t0)/900, 1);
+        el.textContent = Math.round(to * (1-Math.pow(1-p,3))) + (p===1 ? suf : '');
+        if(p<1) requestAnimationFrame(step);
+      }
+      requestAnimationFrame(step);
+    });
+  }
+  function runBars(){
+    Array.prototype.forEach.call(document.querySelectorAll('.fill'), function(f,i){
+      setTimeout(function(){ f.style.width = f.getAttribute('data-w') + '%'; }, reduce ? 0 : i*90);
+    });
+  }
+  var painel = document.getElementById('painel');
+  if('IntersectionObserver' in window && painel){
+    var done = false;
+    var io = new IntersectionObserver(function(es){
+      for(var i=0;i<es.length;i++){
+        if(es[i].isIntersecting && !done){ done = true; runStats(); runBars(); }
+      }
+    },{threshold:.2});
+    io.observe(painel);
+  } else { runStats(); runBars(); }
+
+  var q = document.getElementById('q');
+  var chips = Array.prototype.slice.call(document.querySelectorAll('#chips .chip'));
+  var count = document.getElementById('count');
+  function norm(s){ return s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase(); }
+  function filter(){
+    var v = norm(q.value.trim());
+    if(!v){
+      chips.forEach(function(c){ c.classList.remove('dim','hit'); });
+      count.textContent = chips.length + ' termos';
+      return;
+    }
+    var n = 0;
+    chips.forEach(function(c){
+      var hit = norm(c.textContent).indexOf(v) > -1;
+      c.classList.toggle('dim', !hit);
+      c.classList.toggle('hit', hit);
+      if(hit) n++;
+    });
+    count.textContent = n ? n + ' de ' + chips.length : 'nenhum termo';
+  }
+  q.addEventListener('input', filter);
+  filter();
+
+  var toast = document.getElementById('toast');
+  Array.prototype.forEach.call(document.querySelectorAll('[data-copy]'), function(b){
+    b.addEventListener('click', function(){
+      var txt = b.getAttribute('data-copy');
+      function done(){
+        toast.textContent = 'Copiado: ' + txt;
+        toast.classList.add('on');
+        setTimeout(function(){ toast.classList.remove('on'); }, 1800);
+      }
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(txt).then(done, done);
+      } else {
+        var ta = document.createElement('textarea');
+        ta.value = txt; document.body.appendChild(ta); ta.select();
+        try{ document.execCommand('copy'); }catch(e){}
+        document.body.removeChild(ta); done();
+      }
+    });
+  });
+
+  var links = Array.prototype.slice.call(document.querySelectorAll('.navlinks a'));
+  if('IntersectionObserver' in window){
+    var io2 = new IntersectionObserver(function(es){
+      es.forEach(function(e){
+        if(!e.isIntersecting) return;
+        links.forEach(function(a){ a.classList.toggle('on', a.getAttribute('href') === '#' + e.target.id); });
+      });
+    },{rootMargin:'-45% 0px -50% 0px'});
+    Array.prototype.forEach.call(document.querySelectorAll('section[id]'), function(s){ io2.observe(s); });
+  }
+})();
+</script>
+</body>
+</html>
